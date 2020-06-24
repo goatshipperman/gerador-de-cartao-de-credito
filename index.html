@@ -10,21 +10,7 @@
 
   <title>CCGEN</title>
 
-  <style>
-    .titulo {
-      text-align: center;
-    }
-
-    .borda {
-      border: 1px solid red;
-      margin: auto;
-      margin-top: 5%;
-    }
-
-    .bo {
-      border: 1px solid green;
-    }
-  </style>
+  <link href="css/index.css" rel="stylesheet">
 
 </head>
 <body>
@@ -77,33 +63,42 @@
 
         <div class="row">
           <form method="get">
-            <label for="i_bin">BIN</label>
-            <input type="text" name="bin" id="i_bin" placeholder="400289xxxxxxxxxx" maxlength="19" minlength="15" required>
+            <div class="form-group item_div">
+              <label class="label" for="i_bin">BIN</label>
+              <input class="input" type="text" name="bin" id="i_bin" placeholder="400289xxxxxxxxxx" maxlength="19" minlength="15" required>
+            </div>
         </div>
 
         <div class="row">
-          Adicionar 
-          <div class=" form-group" id="div_adicionar">
-            <label for="i_data">Data</label>
-            <input type="checkbox" name="add" id="i_data">
+          <div class="item_div form-group">
+            <span class="label">Adicionar</span>
+            <div id="div_adicionar">
+              <div class="input">
+                <label for="i_data">Data</label>
+                <input type="checkbox" name="add" id="i_data">
+              </div>
 
-            <label for="i_cvv2">CVV2</label>
-            <input type="checkbox" name="add" id="i_cvv2">
-
-            <label for="i_banco">Banco</label>
-            <input type="checkbox" name="add" id="i_banco">
+              <div class="input">
+                <label for="i_cvv2">CVV2</label>
+                <input type="checkbox" name="add" id="i_cvv2">
+              </div>
+              <div class="input">
+                <label for="i_banco">Banco</label>
+                <input type="checkbox" name="add" id="i_banco">
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="form-group" id="div_quantidade">
-            <label for="i_quantidade">Quantidade</label>
-            <input type="number" value="5" name="quantidade" id="i_quantidade">
+          <div class="form-group item_div" id="div_quantidade">
+            <label class="label" for="i_quantidade">Quantidade</label>
+            <input class="input" type="number" value="5" name="quantidade" id="i_quantidade">
           </div>
 
-          <div class="form-group" id="div_formato">
-            <label for="i_formato">Formato</label>
-            <select name="formato" id="i_formato">
+          <div class="form-group item_div" id="div_formato">
+            <label class="label" for="i_formato">Formato</label>
+            <select class="input" name="formato" id="i_formato">
               <option selected>CHECKER</option>
               <option>CSV</option>
               <option>JSON</option>
@@ -112,14 +107,14 @@
         </div>
 
         <div class="row">
-          <div class="form-group" id="div_cvv2">
-            <label for="i_cvv">CVV2</label>
-            <input text="text" value="rnd" maxlength="3" name="cvv" id="i_cvv">
+          <div class="form-group item_div last" id="div_cvv2">
+            <label class="label" for="i_cvv">CVV2</label>
+            <input class="input" text="text" value="rnd" maxlength="3" name="cvv" id="i_cvv">
           </div>
 
-          <div class="form-group" id="div_mes">
-            <label for="i_mes">MÊS</label>
-            <select name="mes" id="i_mes">
+          <div class="form-group item_div last" id="div_mes">
+            <label class="label" for="i_mes">MÊS</label>
+            <select class="input" name="mes" id="i_mes">
               <option>RANDOM</option>
               <option value="01">01 - Janeiro</option>
               <option value="02">02 - Fevereiro</option>
@@ -136,9 +131,9 @@
             </select>
           </div>
 
-          <div class="form-group" id="div_ano">
-            <label for="i_ano">Ano</label>
-            <select name="ano" id="i_ano">
+          <div class="form-group item_div last" id="div_ano">
+            <label class="label" for="i_ano">Ano</label>
+            <select class="input" name="ano" id="i_ano">
               <option>RANDOM</option>
               <option>2020</option>
               <option>2021</option>
@@ -160,6 +155,11 @@
         </div>
 
       </div>
+
+      <div class="col-md-4 div_area">
+        <textarea id="saida" placeholder="4002801234537654|10|2020|001"></textarea>
+      </div>
+
     </div>
 
   </div>

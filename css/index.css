@@ -1,0 +1,93 @@
+@charset 'utf8';
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.titulo {
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    margin-top: 2%;
+  }
+
+  .borda {
+    margin-left: 2%;
+    margin-top: 5%;
+    background: #DCDCDC;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    display: inline-block;
+  }
+
+  .bo {
+    border: 1px solid green;
+    display: inline-block;
+  }
+
+  .item_div {
+      border: 1px solid black;
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px black;
+      background: #696969;
+  }
+
+  .label {
+      font-weight: bolder;
+      text-shadow: 1px 1px 2px #696969, -1px -1px 2px #696969;
+      margin: 0;
+  }
+
+  .input {
+      background: #C0C0C0;
+      margin: 0;
+      color: black;
+      font-weight: bold;
+      display: inline-block;
+      border-radius: 5px;
+  }
+
+  #div_adicionar {
+      display: inline-block;
+  }
+  
+  #div_formato {
+      margin-left: 1.5%;
+  }
+
+  #i_cvv {
+      width: 50px;
+  }
+
+  #i_quantidade {
+      width: 50px;
+  }
+
+  .last {
+      margin-right: 1.5%;
+  }
+
+  #submit {
+      text-transform: uppercase;
+  }
+
+  .div_area {
+      display: inline-block;
+      position: absolute;
+      top: 26.3%;
+      margin-left: 2%;
+      height: 252px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+      border-radius: 5px;
+      padding: 0;
+  }
+
+  #saida {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: rgb(19, 18, 18);
+      resize: none;
+      color: #696969;
+      font-weight: bold;
+  }
